@@ -25,7 +25,7 @@
         .attr("y", function(d,i) {return h-d;})
         .attr("width", w/dataset.length-barPadding)
         .attr("height", function(d) {return d;})
-        .attr("fill", function(d) {return "rgb(0,0,"+ (d*10) +")";});
+        .attr("fill", function(d) {return "rgb(0,0,"+ (d/2) +")";});
         
         svg.selectAll("text").data(dataset).enter().append("text")
         .text(function(d) {return d;})

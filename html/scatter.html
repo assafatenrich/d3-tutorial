@@ -23,7 +23,7 @@
             var R = Math.round(Math.random()*256);
             var G = Math.round(Math.random()*256);
             var B = Math.round(Math.random()*256);
-            var A = Math.round(Math.random());
+            var A = Math.random();
             dataset.push([x,y,r,R,G,B,A]);             
         }
         svg.selectAll("circle").data(dataset).enter().append("circle")

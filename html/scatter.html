@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>D3 Bar Graphs</title>
+        <title>D3 Scatter plot</title>
         <script type="text/javascript" src="../js/d3.v3.js"></script>
         <link rel="stylesheet" type="text/css" href="../css/styles.css">
                
@@ -31,6 +31,7 @@
         .attr("cy", function(d) {return d[1];})
         .attr("r", function(d) {return d[2];})        
         .attr("fill", function(d) {return "rgba("+d[3]+","+d[4]+","+d[5]+","+d[6]+")";});
+        // .attr("fill", "blue").attr("opacity", function(d) {return d[6];})
         
         svg.selectAll("text").data(dataset).enter().append("text")
         .text(function(d) {return d[0]+","+d[1];})
